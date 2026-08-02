@@ -15,6 +15,7 @@ It intentionally does not contain Android application source code.
 
 | Payload | Compatible models | Kernel version | Status |
 | --- | --- | --- | --- |
+| `r9q-G990B2XXSJIZF1` | Galaxy S21 FE 5G `SM-G990B2` | `5.4.289` | Testing in progress |
 | `galaxy-s25-series-2026-06-07` | Galaxy S25, S25+, S25 Edge, and S25 Ultra regional models | `6.6.98` | Device-tested |
 | `e3q-S928USQS6DZF2` | Galaxy S24 Ultra `SM-S928U` | `6.1.145` | Hardware debugging in progress |
 | `essi-A566EXXSCCZG6` | Galaxy A56 5G `SM-A566E` | `6.6.102` | Device-tested |
@@ -36,6 +37,7 @@ schema version 3. `targets-v2.json` is retained for released 0.2.3 clients.
 ## Build
 
 ```sh
+make TARGET=r9q-G990B2XXSJIZF1 ANDROID_NDK_HOME=/path/to/android-ndk
 make TARGET=pa3q-S938NKSUACZF1 ANDROID_NDK_HOME=/path/to/android-ndk
 make TARGET=e3q-S928USQS6DZF2 ANDROID_NDK_HOME=/path/to/android-ndk
 make TARGET=essi-S721NKSSCDZF3 ANDROID_NDK_HOME=/path/to/android-ndk
